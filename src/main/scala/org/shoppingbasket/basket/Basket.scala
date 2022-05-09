@@ -1,7 +1,7 @@
 package org.shoppingbasket.basket
 
-import org.shoppingbasket.utils.EmptyInputException
 import org.shoppingbasket.calculator.FinalPriceCalculator
+import org.shoppingbasket.utils.EmptyInputException
 
 object Basket{
 
