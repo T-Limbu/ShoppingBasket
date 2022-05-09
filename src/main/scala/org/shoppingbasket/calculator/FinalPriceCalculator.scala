@@ -28,7 +28,7 @@ class FinalPriceCalculator(itemCounter: Map[Item, Int])
       val discountedVal = (Item.Apples.price * 0.1) * a
 
       discountedTotal = discountedTotal + discountedVal
-      println(s"Apples 10% off: ${Util.currencyConvert(discountedTotal)}")
+      println(s"Apples 10% off: ${Util.currencyConvert(discountedVal)}")
     }
 
     // bread discount logic
@@ -40,12 +40,12 @@ class FinalPriceCalculator(itemCounter: Map[Item, Int])
       if (noOfBreadThatCanBeDiscounted > itemCounter(Item.Bread) ){
         val discountedVal = itemCounter(Item.Bread) * (Item.Bread.price / 2)
         discountedTotal = discountedTotal + discountedVal
-        println(s"Bread half price: ${Util.currencyConvert(discountedTotal)}")
+        println(s"Bread half price: ${Util.currencyConvert(discountedVal)}")
       }
       else {
         val discountedVal = noOfBreadThatCanBeDiscounted * (Item.Bread.price / 2)
         discountedTotal = discountedTotal + discountedVal
-        println(s"Bread half price: ${Util.currencyConvert(discountedTotal)}")
+        println(s"Bread half price: ${Util.currencyConvert(discountedVal)}")
       }
     }
 

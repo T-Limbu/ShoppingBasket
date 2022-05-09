@@ -1,7 +1,7 @@
 package org.shoppingbasket.basket
 
 import org.scalatest.{FunSuite, Matchers}
-import org.shoppingbasket.basket.Item._
+import Item._
 import org.shoppingbasket.utils.EmptyInputException
 
 class BasketTest extends FunSuite with Matchers{
